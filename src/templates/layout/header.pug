@@ -1,0 +1,13 @@
+include ../components/modal
+
+mixin header()
+    div.header
+        .container 
+            .row
+               a(href="#").header__item.col-xl-2.col-lg-2.col-md-2.col-4 Главная
+               a(href="#slider").header__item.col-xl-2.col-lg-2.col-md-2.col-4 Слайдер
+               a(href="#cards").header__item.col-xl-2.col-lg-2.col-md-2.col-4 Карточки
+               a(href="#form").header__item.col-xl-2.col-lg-2.col-md-2.col-4 Форма
+               a(href="#list").header__item.col-xl-2.col-lg-2.col-md-2.col-4 Список
+               a(href="#openModal").header__item.col-xl-2.col-lg-2.col-md-2.col-4 Модалка
+        +modal()           

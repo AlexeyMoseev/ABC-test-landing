@@ -1,0 +1,19 @@
+.footer {
+    background: #282828;
+  
+    &__item {
+      padding-top: 18px;
+      padding-bottom: 17px;
+      @extend %base-title;
+      &:hover {
+        color: #FFFFFF;
+        opacity: .5;
+      }
+    }
+  
+    @include phone {
+      &__item {
+        text-align: center;
+      }
+    }
+  }

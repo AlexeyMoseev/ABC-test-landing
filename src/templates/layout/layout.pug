@@ -1,5 +1,6 @@
 include head.pug
-include header-footer.pug
+include header.pug
+include footer.pug
     
 block variables
     
@@ -9,8 +10,8 @@ html(lang='ru')
 
     body
 
-        +header-footer()
+        +header()
         main
             block content
 
-        +header-footer()
+        +footer()
