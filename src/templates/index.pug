@@ -1,0 +1,21 @@
+extends ./layout/layout
+include components/banner
+include components/slider
+include components/cards
+include components/form
+include components/list
+
+block variables
+    - var page_title = 'Главная';
+
+block content
+    +banner()
+    div.index_margin-bottom-45px
+    +slider()
+    div.index_margin-bottom-45px
+    +cards()
+    div.index_margin-bottom-45px
+    +form()
+    div.index_margin-bottom-45px
+    +list()
+    div.index_margin-bottom-45px

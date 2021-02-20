@@ -1,0 +1,78 @@
+$base-font-size: 16px;
+
+%modal-button {
+    padding: 16px 44px 16px 45px;
+    cursor: pointer;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background: #AEA59E;
+    border-radius: 15px;
+
+    &:hover {
+        animation: bounce 1s;
+    }
+}
+
+%base-title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+%slider-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    background: #AEA59E;
+    transform: translate(0, -50%)
+}
+
+%base-heading {
+    margin-bottom: 45px;
+    font-family: Play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 85px;
+    line-height: 98px;
+    color: #000000;
+}
+
+//Разрешения экранов
+$tablet-width: 768px;
+$small-desktop-width: 992px;
+$desktop-width: 1200px;
+$wide-desktop-width : 1400px;
+
+//Анимации
+@keyframes bounce {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}

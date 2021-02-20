@@ -1,0 +1,18 @@
+@import "libs";
+@import "constants";
+@import "functions";
+@import "mixins";
+
+//какие-то глобальные стили
+@import "common/fonts";
+@import "common/base";
+
+//Ваши блоки
+@import "blocks/index";
+@import "blocks/header-footer";
+@import "blocks/banner";
+@import "blocks/slider";
+@import "blocks/cards";
+@import "blocks/form";
+@import "blocks/list";
+@import "blocks/modal";

@@ -1,0 +1,34 @@
+.slider {
+    margin-bottom: -4px;
+
+    &__heading {
+        @extend %base-heading;
+    }
+
+    &__next-arrow,
+    &__prev-arrow {
+        @extend %slider-arrow;
+    }
+
+    &__next-arrow {
+        right: 0;
+        margin-right: 15px+38px;
+    }
+
+    &__prev-arrow {
+        left: 0;
+        margin-left: 15px+19px;
+        z-index: 2;
+    }
+
+    @include phone {
+        &__heading {
+            font-size: 55px;
+            line-height: 55px;
+        }
+        &__next-arrow,
+        &__prev-arrow {
+            visibility: hidden;
+        }
+    }
+}

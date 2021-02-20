@@ -1,0 +1,16 @@
+include ./modal
+
+mixin cards()
+    .cards(id="cards")
+        .container 
+            .row
+                h2.cards__heading.col-12 КАРТОЧКИ
+            .row    
+                div.js-cards__items.cards__items.col-12
+                    each val in [{title:"Услуга 1", item:1},{title:"Услуга 2", item:2},{title:"Услуга 3", item:3},{title:"Услуга 4", item:1},{title:"Услуга 5", item:2},{title:"Услуга 6", item:3}]
+                        div.cards__item-wrapper.col-4
+                            div.cards__item(class="cards__item-"+val.item)
+                                h2.cards__title=val.title
+                                img.cards__picture(src="../images/slide2.svg")
+                                button.cards__button(onClick='location.href="#openModal"') Модальное окно   
+        +modal()                        

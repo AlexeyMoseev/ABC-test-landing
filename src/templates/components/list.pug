@@ -1,0 +1,11 @@
+mixin list()
+    .list(id="list")
+        .container 
+            .row 
+                h2.list__heading.col-12 СПИСОК
+            .row
+                each val in [{title:"Список 1"},{title:"Список 2"},{title:"Список 3"}]
+                    .col-12.list__wrapper    
+                        h2.list__title=val.title
+                            img.list__state-indicator-plus(src="../images/plus.svg")
+                        .list__description.col-12 Описание                     

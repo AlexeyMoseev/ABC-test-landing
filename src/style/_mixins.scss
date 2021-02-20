@@ -1,0 +1,80 @@
+@mixin wide-desktop {
+	@media only screen and (max-width: #{$wide-desktop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin wide-desktop-min {
+	@media only screen and (min-width: #{$wide-desktop-width}) {
+		@content;
+	}
+}
+
+@mixin small-desktop {
+	@media only screen and (max-width: #{$desktop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin small-desktop-min {
+	@media only screen and (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media only screen and (max-width: #{$small-desktop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin tablet-min {
+	@media only screen and (min-width: #{$small-desktop-width}) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media only screen and (max-width: #{$tablet-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin phone-min {
+	@media only screen and (min-width: #{$tablet-width}) {
+		@content;
+
+	}
+}
+
+@mixin respond-to($media) {
+	@if $media == small_s {
+		@media only screen and (max-width: $small) {
+			@content;
+		}
+	} @else if $media == medium_s {
+		@media only screen and (min-width: $small + 1) and (max-width: $large - 1) {
+			@content;
+		}
+	} @else if $media == wide_max_s {
+		@media only screen and (max-width: $large - 1) {
+			@content;
+		}
+	} @else if $media == wide_s {
+		@media only screen and (min-width: $large) {
+			@content;
+		}
+	}
+}
+
+@mixin respond-to-max($custom) {
+	@media only screen and (max-width: $custom - 1) {
+		@content;
+	}
+}
+
+@mixin respond-to-min($custom1) {
+	@media only screen and (min-width: $custom1) {
+		@content;
+	}
+}

@@ -1,0 +1,32 @@
+.banner {
+    background: url("../img/web-app\ 1.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__title {
+        padding-top: 254px;
+        padding-bottom: 36px;
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 85px;
+        line-height: 98px;
+        color: #FFFFFF;
+    }
+
+    &__button {
+        @extend %modal-button;
+        margin-bottom: 349px;
+    }
+
+    @include phone {
+        &__title {
+            padding-top: 154px;
+            font-size: 34px;
+            line-height: 49px;
+        }
+        &__button {
+            margin-bottom: 149px;
+        }
+    }
+}

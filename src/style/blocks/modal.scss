@@ -1,0 +1,84 @@
+.modal {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    z-index: 99999;
+    /* stylelint-disable */
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    /* stylelint-enable */
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+
+    &:target {
+        display: block;
+        pointer-events: auto;
+    }
+
+    &__wrapper {
+        width: 750px;
+        height: 500px;
+        position: relative;
+        margin: 5% auto;
+        background: #fff;
+        /* stylelint-disable */
+        background: -moz-linear-gradient(#fff, #999);
+        background: -webkit-linear-gradient(#fff, #999);
+        background: -o-linear-gradient(#fff, #999);
+        /* stylelint-enable */
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 85px;
+        line-height: 98px;
+        color: #000000;
+    }
+
+    &__close {
+        position: absolute;
+        right: 21px;
+        text-align: center;
+        top: 10px;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    @include phone {
+        &__wrapper {
+            width: 550px;
+            height: 300px;
+        }
+        &__title {
+            font-size: 45px;
+            line-height: 49px;
+        }
+    }
+
+    @include respond-to-max(520px) {
+        &__wrapper {
+            width: 300px;
+            height: 300px;
+        }
+        &__title {
+            font-size: 35px;
+            line-height: 39px;
+        }
+    }
+}

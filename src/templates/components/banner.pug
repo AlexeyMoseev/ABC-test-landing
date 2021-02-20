@@ -1,0 +1,10 @@
+include ./modal
+
+mixin banner() 
+    div.banner
+        .container 
+            .row
+                .col-xl-10.col-lg-10.col-md-10.col-12
+                    p.banner__title ТЕСТОВОЕ ЗАДАНИЕ АБВ! СТУДИЯ
+                    button.banner__button(onClick='location.href="#openModal"') Модальное окно
+        +modal()            

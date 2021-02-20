@@ -1,0 +1,91 @@
+.form {
+    &__heading {
+        @extend %base-heading;
+    }
+
+    &__wrapper {
+        background: #282828;
+    }
+
+    &__title {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        @extend %base-title;
+        color: #FFFFFF;
+    }
+
+    &__name,
+    &__number {
+        padding-left: 55px;
+        width: 97%;
+        height: 65px;
+        margin-bottom: 22px;
+        background: #E5E5E5;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 15px;
+
+        &::placeholder {
+            @extend %base-title;
+            color: #282828;
+        }
+    }
+
+    &__name {
+        margin-right: 15px;
+    }
+
+    &__number {
+        margin-left: 15px;
+    }
+
+    &__name-wrapper,
+    &__number-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    &__message {
+        padding-top: 20px;
+        padding-left: 55px;
+        height: 135px;
+        margin-bottom: 22px;
+        background: #E5E5E5;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 15px;
+
+        &::placeholder {
+            @extend %base-title;
+            color: #282828;
+        }
+    }
+
+    &__button {
+        @extend %modal-button;
+        margin-bottom: 28px;
+    }
+
+    @include phone {
+        &__heading {
+            font-size: 55px;
+            line-height: 55px;
+        }
+    }
+
+    @include respond-to-max(800px) {
+
+        &__name,
+        &__number {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &__name-wrapper,
+        &__number-wrapper {
+            text-align: center;
+        }
+    }
+}

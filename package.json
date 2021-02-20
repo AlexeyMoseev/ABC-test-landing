@@ -1,0 +1,55 @@
+{
+  "name": "digital-spectr-html-markup",
+  "version": "1.0.0",
+  "description": "Quick start markup",
+  "scripts": {
+    "start": "gulp",
+    "build": "npm run js:lint && npm run style:lint && gulp build",
+    "style:lint": "stylelint \"src/style/**/*.scss\" --syntax scss",
+    "style:fix": "stylelint \"src/style/**/*.scss\" --syntax scss --fix",
+    "js:lint": "eslint \"src/js/**/*.js\"",
+    "js:fix": "eslint \"src/js/**/*.js\" --fix"
+  },
+  "author": "Digital Spectr <man@digital-spectr.ru> (http://digital-spectr.ru)",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-stage-2": "^7.0.0",
+    "@babel/register": "^7.4.4",
+    "babel-eslint": "^10.0.1",
+    "del": "^4.1.1",
+    "eslint": "^5.16.0",
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1",
+    "husky": "^2.3.0",
+    "jquery.maskedinput": "^1.4.1",
+    "slick-carousel": "^1.8.1",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0"
+  },
+  "devDependencies": {
+    "jquery": "^3.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run js:lint && npm run style:lint"
+    }
+  }
+}

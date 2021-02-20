@@ -1,0 +1,56 @@
+.list {
+    &__heading {
+        @extend %base-heading;
+    }
+
+    &__wrapper {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        cursor: pointer;
+        position: relative;
+        padding: 26px 0 26px 40px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+        background: #C4C4C4;
+        color: #FFFFFF;
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__state-indicator-plus {
+        position: absolute;
+        right: 35px;
+        top: 28px;
+    }
+
+    &__state-indicator-minus {
+        position: absolute;
+        right: 35px;
+        top: 40px;
+    }
+
+    &__description {
+        display: none;
+        padding: 55px 0 52px 40px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        background: #E5E5E5;
+        color: #FFFFFF;
+    }
+
+    @include phone {
+        &__heading {
+            font-size: 55px;
+            line-height: 55px;
+        }
+    }
+}

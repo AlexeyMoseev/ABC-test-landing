@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Главная</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../css/style.css" media="all"/>
+    <script async="async" src="../js/bundle.js"></script>
+  </head>
+  <body>
+    <div class="header-footer">
+      <div class="container"> 
+        <div class="row"><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#">Главная</a><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#slider">Слайдер</a><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#cards">Карточки</a><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#form">Форма</a><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#list">Список</a><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#openModal">Модалка</a></div>
+      </div>
+      <div class="modal" id="openModal">
+        <div class="modal__wrapper"><a class="modal__close" href="#close" title="Закрыть"><img src="../images/close.svg"/></a>
+          <h2 class="modal__title">Модалка</h2>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="banner">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-xl-10 col-lg-10 col-md-10 col-12">
+              <p class="banner__title">ТЕСТОВОЕ ЗАДАНИЕ АБВ! СТУДИЯ</p>
+              <button class="banner__button" onClick="location.href=&quot;#openModal&quot;">Модальное окно</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="openModal">
+          <div class="modal__wrapper"><a class="modal__close" href="#close" title="Закрыть"><img src="../images/close.svg"/></a>
+            <h2 class="modal__title">Модалка</h2>
+          </div>
+        </div>
+      </div>
+      <div class="index_margin-bottom-45px"></div>
+      <div class="slider" id="slider">
+        <div class="container"> 
+          <div class="row">
+            <h2 class="slider__heading col-12">СЛАЙДЕР</h2>
+          </div>
+          <div class="row">   
+            <div class="js-slider__items slider__items col-12">
+              <div class="slider__item"><img src="../images/slide1.svg"/></div>
+              <div class="slider__item"><img src="../images/slide1.svg"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="index_margin-bottom-45px"></div>
+      <div class="cards" id="cards">
+        <div class="container"> 
+          <div class="row">
+            <h2 class="cards__heading col-12">КАРТОЧКИ</h2>
+          </div>
+          <div class="row">   
+            <div class="js-cards__items cards__items col-12">
+              <div class="cards__item-wrapper col-4">
+                <div class="cards__item cards__item-1">
+                  <h2 class="cards__title">Услуга 1</h2><img class="cards__picture" src="../images/slide2.svg"/>
+                  <button class="cards__button" onClick="location.href=&quot;#openModal&quot;">Модальное окно   </button>
+                </div>
+              </div>
+              <div class="cards__item-wrapper col-4">
+                <div class="cards__item cards__item-2">
+                  <h2 class="cards__title">Услуга 2</h2><img class="cards__picture" src="../images/slide2.svg"/>
+                  <button class="cards__button" onClick="location.href=&quot;#openModal&quot;">Модальное окно   </button>
+                </div>
+              </div>
+              <div class="cards__item-wrapper col-4">
+                <div class="cards__item cards__item-3">
+                  <h2 class="cards__title">Услуга 3</h2><img class="cards__picture" src="../images/slide2.svg"/>
+                  <button class="cards__button" onClick="location.href=&quot;#openModal&quot;">Модальное окно   </button>
+                </div>
+              </div>
+              <div class="cards__item-wrapper col-4">
+                <div class="cards__item cards__item-1">
+                  <h2 class="cards__title">Услуга 4</h2><img class="cards__picture" src="../images/slide2.svg"/>
+                  <button class="cards__button" onClick="location.href=&quot;#openModal&quot;">Модальное окно   </button>
+                </div>
+              </div>
+              <div class="cards__item-wrapper col-4">
+                <div class="cards__item cards__item-2">
+                  <h2 class="cards__title">Услуга 5</h2><img class="cards__picture" src="../images/slide2.svg"/>
+                  <button class="cards__button" onClick="location.href=&quot;#openModal&quot;">Модальное окно   </button>
+                </div>
+              </div>
+              <div class="cards__item-wrapper col-4">
+                <div class="cards__item cards__item-3">
+                  <h2 class="cards__title">Услуга 6</h2><img class="cards__picture" src="../images/slide2.svg"/>
+                  <button class="cards__button" onClick="location.href=&quot;#openModal&quot;">Модальное окно   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="openModal">
+          <div class="modal__wrapper"><a class="modal__close" href="#close" title="Закрыть"><img src="../images/close.svg"/></a>
+            <h2 class="modal__title">Модалка</h2>
+          </div>
+        </div>
+      </div>
+      <div class="index_margin-bottom-45px"></div>
+      <div class="form" id="form">
+        <div class="container"> 
+          <div class="row">
+            <h2 class="form__heading col-12">ФОРМА</h2>
+          </div>
+        </div>
+        <form class="form__wrapper" method="post" action="mailto:test@abvstudio.ru">       
+          <div class="container">       
+            <div class="row">
+              <h3 class="form__title col-12">Стандартная форма обратной связи</h3>
+            </div>
+            <div class="row justify-content-center">
+              <div class="js-form__wrapper form__name-wrapper col-xl-5 col-lg-5 col-md-6 col-11">
+                <input class="js-form__input js-form__name form__name" name="name" type="text" placeholder="Ваше Имя*" autocomplete="off"/>
+              </div>
+              <div class="js-form__wrapper form__number-wrapper col-xl-5 col-lg-5 col-md-6 col-11">
+                <input class="js-form__input js-form__number form__number" name="number" type="text" placeholder="Ваш Номер*" autocomplete="off"/>
+              </div>
+            </div>
+            <div class="row justify-content-center"><textarea class="js-form__input form__message col-xl-10 col-lg-10 col-11" name="comment" type="text" placeholder="Сообщение" autocomplete="off"></textarea></div>
+            <div class="row justify-content-center">
+              <button class="js-form__button form__button col-xl-4 col-lg-4 col-md-6 col-11">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="index_margin-bottom-45px"></div>
+      <div class="list" id="list">
+        <div class="container"> 
+          <div class="row"> 
+            <h2 class="list__heading col-12">СПИСОК</h2>
+          </div>
+          <div class="row">
+            <div class="col-12 list__wrapper">   
+              <h2 class="list__title">Список 1<img class="list__state-indicator-plus" src="../images/plus.svg"/></h2>
+              <div class="list__description col-12">Описание                     </div>
+            </div>
+            <div class="col-12 list__wrapper">   
+              <h2 class="list__title">Список 2<img class="list__state-indicator-plus" src="../images/plus.svg"/></h2>
+              <div class="list__description col-12">Описание                     </div>
+            </div>
+            <div class="col-12 list__wrapper">   
+              <h2 class="list__title">Список 3<img class="list__state-indicator-plus" src="../images/plus.svg"/></h2>
+              <div class="list__description col-12">Описание                     </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="index_margin-bottom-45px"></div>
+    </main>
+    <div class="header-footer">
+      <div class="container"> 
+        <div class="row"><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#">Главная</a><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#slider">Слайдер</a><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#cards">Карточки</a><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#form">Форма</a><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#list">Список</a><a class="header-footer__item col-xl-2 col-lg-2 col-md-2 col-4" href="#openModal">Модалка</a></div>
+      </div>
+      <div class="modal" id="openModal">
+        <div class="modal__wrapper"><a class="modal__close" href="#close" title="Закрыть"><img src="../images/close.svg"/></a>
+          <h2 class="modal__title">Модалка</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

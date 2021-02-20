@@ -1,0 +1,19 @@
+mixin form()
+    .form(id="form")
+        .container 
+            .row
+                h2.form__heading.col-12 ФОРМА
+        form.form__wrapper(method="post" action='mailto:test@abvstudio.ru')        
+            .container        
+                .row
+                    h3.form__title.col-12 Стандартная форма обратной связи
+                .row.justify-content-center
+                    .js-form__wrapper.form__name-wrapper.col-xl-5.col-lg-5.col-md-6.col-11
+                        input.js-form__input.js-form__name.form__name(name="name" type="text" placeholder="Ваше Имя*" autocomplete="off") 
+                    .js-form__wrapper.form__number-wrapper.col-xl-5.col-lg-5.col-md-6.col-11
+                        input.js-form__input.js-form__number.form__number(name="number" type="text" placeholder="Ваш Номер*" autocomplete="off") 
+                .row.justify-content-center
+                   <textarea class="js-form__input form__message col-xl-10 col-lg-10 col-11" name="comment" type="text" placeholder="Сообщение" autocomplete="off"></textarea>
+                .row.justify-content-center
+                    button.js-form__button.form__button.col-xl-4.col-lg-4.col-md-6.col-11 Отправить
+

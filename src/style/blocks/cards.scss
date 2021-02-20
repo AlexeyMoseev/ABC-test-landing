@@ -1,0 +1,91 @@
+.cards {
+
+    &__heading {
+        @extend %base-heading;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__item-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__item {
+        width: 350px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #C4C4C4;
+        border-radius: 15px;
+
+        &-1 {
+            margin-right: 20px;
+        }
+
+        &-2 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        &-3 {
+            margin-left: 20px;
+        }
+    }
+
+    &__title {
+        margin-top: 96px;
+        margin-bottom: 10px;
+        @extend %base-title;
+    }
+
+    &__button {
+        margin-top: 38px;
+        margin-bottom: 27px;
+        @extend %modal-button;
+    }
+
+    &__prev-arrow,
+    &__next-arrow {
+        @extend %slider-arrow;
+        width: 79px;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__next-arrow {
+        right: 0;
+        margin-right: 15px;
+    }
+
+    &__prev-arrow {
+        left: 0;
+        margin-left: 15px;
+        z-index: 2;
+    }
+
+    @include phone {
+        &__heading {
+            font-size: 55px;
+            line-height: 55px;
+        }
+    }
+
+    @include respond-to-max(520px) {
+        &__next-arrow,
+        &__prev-arrow {
+            display: none;
+        }
+    }
+
+    @include small-desktop {
+        & {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+mixin head(page_title, scripts)
+    head
+        title=page_title
+        meta(charset='utf-8')
+        meta(name='viewport', content="width=device-width, initial-scale=1.0")
+        meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+        meta(name="apple-mobile-web-app-capable", content="yes")
+        meta(name="format-detection", content="telephone=no")
+        link(rel='stylesheet', href='../css/style.css', media='all')
+
+        -   if (scripts && scripts.length)
+            for script in scripts
+                script(src= script)
+
+        script(async src='../js/bundle.js')
