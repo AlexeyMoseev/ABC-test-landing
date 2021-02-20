@@ -1,6 +1,12 @@
 .slider {
     margin-bottom: -4px;
 
+    &:before {
+        display: block;
+        content: "";
+        height: 55px;
+    }
+
     &__heading {
         @extend %base-heading;
     }
@@ -27,6 +33,7 @@
             font-size: 55px;
             line-height: 55px;
         }
+
         &__next-arrow,
         &__prev-arrow {
             visibility: hidden;

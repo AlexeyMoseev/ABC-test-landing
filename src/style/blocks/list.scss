@@ -1,4 +1,11 @@
 .list {
+    
+    &:before {
+        display: block;
+        content: "";
+        height: 55px;
+    }
+
     &__heading {
         @extend %base-heading;
     }
@@ -18,6 +25,7 @@
         line-height: 33px;
         background: #C4C4C4;
         color: #FFFFFF;
+
         &:hover {
             opacity: .7;
         }

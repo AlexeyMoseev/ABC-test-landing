@@ -1,5 +1,11 @@
 .cards {
 
+    &::before {
+        display: block;
+        content: "";
+        height: 45px;
+    }
+
     &__heading {
         @extend %base-heading;
     }
@@ -78,6 +84,7 @@
     }
 
     @include respond-to-max(520px) {
+
         &__next-arrow,
         &__prev-arrow {
             display: none;
